@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6e6d2;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(63, 55, 55, 0.1); */
+  box-shadow: rgba(50, 40, 240, 0.50) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+h1 {
+  text-align: center;
+}
+/* .employee-card:hover {
+  background:#f0ad4e;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  display: block ;
+  justify-content: space-between;
+  transition:0.5s;
+} */
+
+
+.employee-card {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;                 /* ✅ Flex to align buttons */
+  justify-content: space-between;/* ✅ Buttons on right */
+  align-items: center;
+  transition: 0.5s;
+}
+
+.employee-card:hover {
+  background: #f0ad4e;           /* ✅ Change only color on hover */
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button.edit { background-color: #f0ad4e; color: #fff; }
+button.delete { background-color: #d9534f; color: #fff; }
+button.save { background-color: #5cb85c; color: #fff; }
+button.cancel { background-color: #6c757d; color: #fff; margin-left: 5px; }
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
